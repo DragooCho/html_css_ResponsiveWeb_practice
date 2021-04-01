@@ -13,7 +13,7 @@ body {
 .item {
   font-size: 30px;
   text-align: center;
-  line-height: 200px;
+  line-height: 200px; /* 그리드 아이템 전체 너비의 중간으로 오게 계산해서 수치를 넣는다. */
 }
 
 .item:nth-child(1) {
@@ -105,6 +105,7 @@ body {
       "   a    main    b   "
       "   .     .      .   "
       "footer footer footer";
+    /* 이 템플릿에서 해당구역의 이름을 선언하고 grid-area를 이용해 그리드 아이템을 정렬한다. */
   }
   .item:nth-child(1) {
     grid-area: header;
